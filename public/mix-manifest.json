@@ -1,0 +1,23 @@
+{
+    "/js/app.js": "/js/app.js",
+    "/css/app.css": "/css/app.css",
+    "/js/components/app.js": "/js/components/app.js",
+    "/fonts/vendor/fontawesome-free/brands.svg": "/fonts/vendor/fontawesome-free/brands.svg",
+    "/fonts/vendor/fontawesome-free/regular.svg": "/fonts/vendor/fontawesome-free/regular.svg",
+    "/fonts/vendor/fontawesome-free/solid.svg": "/fonts/vendor/fontawesome-free/solid.svg",
+    "/fonts/vendor/fontawesome-free/fa-brands-400.eot": "/fonts/vendor/fontawesome-free/fa-brands-400.eot",
+    "/fonts/vendor/fontawesome-free/fa-brands-400.svg": "/fonts/vendor/fontawesome-free/fa-brands-400.svg",
+    "/fonts/vendor/fontawesome-free/fa-brands-400.ttf": "/fonts/vendor/fontawesome-free/fa-brands-400.ttf",
+    "/fonts/vendor/fontawesome-free/fa-brands-400.woff": "/fonts/vendor/fontawesome-free/fa-brands-400.woff",
+    "/fonts/vendor/fontawesome-free/fa-brands-400.woff2": "/fonts/vendor/fontawesome-free/fa-brands-400.woff2",
+    "/fonts/vendor/fontawesome-free/fa-regular-400.eot": "/fonts/vendor/fontawesome-free/fa-regular-400.eot",
+    "/fonts/vendor/fontawesome-free/fa-regular-400.svg": "/fonts/vendor/fontawesome-free/fa-regular-400.svg",
+    "/fonts/vendor/fontawesome-free/fa-regular-400.ttf": "/fonts/vendor/fontawesome-free/fa-regular-400.ttf",
+    "/fonts/vendor/fontawesome-free/fa-regular-400.woff": "/fonts/vendor/fontawesome-free/fa-regular-400.woff",
+    "/fonts/vendor/fontawesome-free/fa-regular-400.woff2": "/fonts/vendor/fontawesome-free/fa-regular-400.woff2",
+    "/fonts/vendor/fontawesome-free/fa-solid-900.eot": "/fonts/vendor/fontawesome-free/fa-solid-900.eot",
+    "/fonts/vendor/fontawesome-free/fa-solid-900.svg": "/fonts/vendor/fontawesome-free/fa-solid-900.svg",
+    "/fonts/vendor/fontawesome-free/fa-solid-900.ttf": "/fonts/vendor/fontawesome-free/fa-solid-900.ttf",
+    "/fonts/vendor/fontawesome-free/fa-solid-900.woff": "/fonts/vendor/fontawesome-free/fa-solid-900.woff",
+    "/fonts/vendor/fontawesome-free/fa-solid-900.woff2": "/fonts/vendor/fontawesome-free/fa-solid-900.woff2"
+}
