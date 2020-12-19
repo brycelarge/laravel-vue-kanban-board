@@ -7,10 +7,10 @@
                 <button class="bg-red" @click.prevent="dbDump"><i class="fas fa-cloud-download-alt"></i></i> Download DB</button>
             </div>
         </div>
-        <div class="row h-100">
+        <div class="flex-grid h-100">
             <column v-for="(column, index) in columns" :column="column" :key="index" :index="index"></column>
         </div>
-        <modal name="modal" transition="nice-modal-fade" height="auto" width="50%" :min-height="280" :min-width="300" style="z-index: 9999;" @closed="resetState">
+        <modal name="modal" transition="nice-modal-fade" height="auto" width="50%" style="z-index: 9999;" @closed="resetState">
             <edit-column v-if="selectedColumn && !addingCard && !selectedCard" :column="selectedColumn"></edit-column>
             <edit-column v-if="addingColumn"></edit-column>
             <edit-card v-if="selectedColumn && selectedCard" :column="selectedColumn" :card="selectedCard"></edit-card>
@@ -104,7 +104,7 @@
                     .finally(() => this.loading = false);
             },
             displayAxiosError(error) {
-                //validation errors from laravel
+                // validation errors from laravel
                 if (error.response.status === 422) {
                     this.displayValidationErrors(error.response.data.error.errors);
                 }
