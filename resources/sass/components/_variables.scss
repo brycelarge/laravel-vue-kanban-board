@@ -1,0 +1,22 @@
+$xs-break-point: 576;
+$sm-break-point: 768;
+$md-break-point: 992;
+$lg-break-point: 1200;
+$gutter: 20;
+$cols: 6;
+$padding: 4px;
+
+$blue: #009dd9;
+$green: #28a745;
+$red: #f2443d;
+$grey: #e4e8ec;
+$light-grey: #f0f4f8;
+$dark-grey: #343a40;
+
+$colors: (
+    "blue": $blue,
+    "green": $green,
+    "grey": $grey,
+    "light-grey": $light-grey,
+    "red": $red,
+);

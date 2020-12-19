@@ -1,0 +1,14 @@
+@each $name, $value in $colors {
+  .bg-#{$name} {
+    background-color: $value;
+    @if(lightness($value) < 70%) {
+      color: #FFFFFF;
+    } @else {
+      color: $dark-grey;
+    }
+  }
+
+  .f-#{$name} {
+    color: $value;
+  }
+}
