@@ -106,7 +106,7 @@
             displayAxiosError(error) {
                 // validation errors from laravel
                 if (error.response.status === 422) {
-                    this.displayValidationErrors(error.response.data.error.errors);
+                    this.displayValidationErrors(error.response.data.errors);
                 }
 
                 this.$refs.messages.e(`An unknown error occurred: ${error.response.statusText}`);

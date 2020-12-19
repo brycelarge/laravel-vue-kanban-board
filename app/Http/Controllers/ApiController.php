@@ -27,9 +27,9 @@ class ApiController extends Controller
     {
         $data = $this->validate(request(), [
             'columns' => 'required|array',
-            'columns.cards.*' => 'required|array',
-            'columns.title.*' => 'required|string|min:3|max:100',
-            'columns.cards.*.title.*' => 'required|string|min:3|max:100',
+            'columns.*.cards.*' => 'required|array',
+            'columns.*.title' => 'required|string|min:3|max:100',
+            'columns.*.cards.*.title.*' => 'required|string|min:3|max:100',
         ]);
 
         $columns = collect();
