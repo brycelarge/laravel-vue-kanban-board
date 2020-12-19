@@ -120,6 +120,7 @@
         mounted() {
             this.getColumns();
             this.$refs.messages.defaultPosition = "toast-top-right";
+            this.$refs.messages.defaultTimeout = 2000;
 
             Bus.$on('edit-column', (column) => {
                 this.selectedColumn = column;
