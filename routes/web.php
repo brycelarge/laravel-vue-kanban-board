@@ -14,3 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::view('/', 'app');
+
+Route::get('columns', \App\Http\Controllers\ApiController::class . '@index')->name('columns.index');
+Route::post('columns/persist', \App\Http\Controllers\ApiController::class . '@persist')->name('columns.persist');
+Route::get('db/dump', \App\Http\Controllers\ApiController::class . '@dumpDb')->name('db.dump');
