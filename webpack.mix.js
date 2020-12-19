@@ -1,4 +1,5 @@
 const mix = require('laravel-mix');
+require('laravel-mix-purgecss');
 
 /*
  |--------------------------------------------------------------------------
@@ -12,4 +13,9 @@ const mix = require('laravel-mix');
  */
 
 mix.js('resources/js/app.js', 'public/js')
-    .sass('resources/sass/app.scss', 'public/css');
+    .js('resources/js/vue/app.js', 'public/js/components/app.js')
+    .copy('node_modules/@fortawesome/fontawesome-free/svgs/*', 'public/fonts/vendor/fontawesome-free/')
+    .copy('node_modules/@fortawesome/fontawesome-free/sprites/*', 'public/fonts/vendor/fontawesome-free/')
+    .copy('node_modules/@fortawesome/fontawesome-free/webfonts/*', 'public/fonts/vendor/fontawesome-free/')
+    .sass('resources/sass/app.scss', 'public/css')
+    .purgeCss();
