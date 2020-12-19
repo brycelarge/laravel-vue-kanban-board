@@ -25,7 +25,7 @@ class ApiController extends Controller
      */
     public function persist()
     {
-        $this->validate(request(), [
+        $data = $this->validate(request(), [
             'columns' => 'required|array',
             'columns.cards.*' => 'required|array',
             'columns.title.*' => 'required|string|min:3|max:100',
@@ -36,7 +36,7 @@ class ApiController extends Controller
 
         // There must be a more efficient way of doing this
         // but my 1 month old baby is taking up most of my time so lets do the fastest route for now
-        foreach (request('columns') as $columnData) {
+        foreach ($data['columns'] as $columnData) {
             $isColumnDeleted = (bool) $columnData['deleted'] ?? false;
             $column = $this->getColumn($columnData['title'], $columnData['id'] ?? null);
 
