@@ -1,20 +1,13 @@
-.h-100 {
-    height: 100% !important;
-}
-
-.w-100 {
-    width: 100% !important;
-}
-
-.d-flex {
-    display: flex !important;
-}
-
 .row {
     display: flex;
     flex-wrap: wrap;
     margin-left: -$gutter / 2 * 1px;
     margin-right: -$gutter / 2 * 1px;
+}
+
+.flex-grid {
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .col {
@@ -23,11 +16,9 @@
 }
 
 .col-auto {
-    flex-grow: 1;
-    flex-basis: 0;
-    min-height: 300px;
-    min-width: percentage(1 / $cols);
-    max-height: 49%;
+    flex: 1 0 20%;
+    min-width: 250px;
+    min-height: 49vh;
     background-color: #fff;
     background-clip: border-box;
     border: 1px solid rgba(0, 0, 0, 0.125);
@@ -35,9 +26,12 @@
     margin: $gutter / 2 * 1px $gutter / 2 * 1px;
 }
 
-@media (max-width: $xs-break-point * 1px) {
-    .col {
-        flex: 0 1 auto;
-        width: 100% !important;
+@media (max-width: 576px) {
+    .flex-grid {
+        display: block;
+
+        .col {
+            min-height: 300px;
+        }
     }
 }
