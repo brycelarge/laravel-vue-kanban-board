@@ -31,19 +31,19 @@ set('shared_files', [
 ]);
 
 // Further config
-set('http_user', 'brycelargeco');
+set('http_user', env('DEPLOY_HTTP_USER'));
 set('default_stage', 'production');
 set('keep_releases', 2);
 set('writable_mode', 'chmod');
-set('deploy_path', '/home/brycelargeco');
+set('deploy_path', env('DEPLOY_PATH'));
 set('branch', 'master');
 
 host('production')
-    ->hostname('102.130.116.169')
-    ->user('root')
+    ->hostname(env('DEPLOY_HOST'))
+    ->user(env('DEPLOY_USER'))
     ->forwardAgent(true)
     ->multiplexing(true)
-    ->set('composer_options', 'install --verbose --prefer-dist --optimize-autoloader --no-progress --no-interaction --no-dev --ignore-platform-reqs');
+    ->set('composer_options', 'install --verbose --prefer-dist --optimize-autoloader --no-progress --no-interaction --no-dev');
 
 // Overridden from recipes/sentry
 task('deploy', [
