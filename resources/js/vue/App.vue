@@ -19,7 +19,7 @@
         <vue-toastr ref="messages"></vue-toastr>
         <p>The styling is not bootstrap, I use bootstrap daily so my design is inspired from what my eyes are used to seeing daily.</p>
         <p>I have a much better and more complex side project I have been working on if someone has the time to have a zoom or teams meeting with me so I can take you through it?</p>
-        <p>Im have just become a father so my time is limited, all in all around 6 hours to do this project in between naps and poop diapers :-)</p>
+        <p>Im have just become a father so my time is limited, all in all around 7 hours to do this project in between naps and poop diapers :-)</p>
     </div>
 </template>
 
