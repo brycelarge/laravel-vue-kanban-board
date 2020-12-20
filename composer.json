@@ -18,16 +18,18 @@
         "ext-zip": "*"
     },
     "require-dev": {
+        "barryvdh/laravel-debugbar": "^3.3",
+        "barryvdh/laravel-ide-helper": "^2.7",
+        "deployer/deployer": "^6.8",
+        "deployer/recipes": "^6.2",
         "facade/ignition": "^2.5",
         "fakerphp/faker": "^1.9.1",
+        "friendsofphp/php-cs-fixer": "^2.16",
         "laravel/sail": "^0.0.5",
         "mockery/mockery": "^1.4.2",
         "nunomaduro/collision": "^5.0",
-        "friendsofphp/php-cs-fixer": "^2.16",
-        "spatie/laravel-fractal": "^5.8",
-        "barryvdh/laravel-debugbar": "^3.3",
-        "barryvdh/laravel-ide-helper": "^2.7",
-        "phpunit/phpunit": "^9.3.3"
+        "phpunit/phpunit": "^9.3.3",
+        "spatie/laravel-fractal": "^5.8"
     },
     "config": {
         "optimize-autoloader": true,
